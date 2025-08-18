@@ -19,8 +19,8 @@ def send_command(serial_conn, command, wait=1):
 
 
 def configure_ssh(baud_rate=9600):
-    HOSTNAME = "test5.switch.us"
-    PORT = "COM9"
+    HOSTNAME = ""
+    PORT = ""
 
     parser = argparse.ArgumentParser(description="Cisco Enable SSH Script")
     parser.add_argument("--host", type=str, help="host")
@@ -66,4 +66,5 @@ def configure_ssh(baud_rate=9600):
 
 
 if __name__ == '__main__':
+
     configure_ssh()
